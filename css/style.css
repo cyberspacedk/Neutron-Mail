@@ -1,0 +1,152 @@
+:root {
+  --primary-color: #70497c;
+  --text-color: #535353;
+  --social-bg: #62625f;
+}
+@font-face {
+  font-family: "TitilliumWebReg";
+  src: url(../font/TitilliumWeb-Regular.ttf);
+}
+@font-face {
+  font-family: "TitilliumWebBold";
+  src: url(../font/TitilliumWeb-Bold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header-wrapper {
+  min-height: 800px;
+  margin: 0;
+  padding: 90px 0 0 0;
+  background: url(../img/header-2.png) no-repeat 0 85%,
+    url(../img/header-1.jpg) no-repeat 0 0;
+  background-size: contain;
+}
+.container {
+  width: 1250px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: TitilliumWebReg, serif;
+  color: var(--text-color);
+}
+.header-top {
+  display: flex;
+  align-items: baseline;
+}
+.header-logo {
+  margin: 0;
+}
+.header-nav {
+  margin-left: auto;
+}
+.header-nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.header-nav-list__item {
+  margin-right: 20px;
+}
+.header-nav-list__link {
+  text-decoration: none;
+  font: 16pt TitilliumWebReg, sans-serif;
+  color: var(--text-color);
+}
+.user-login,
+.user-signup,
+.user-option__create {
+  display: inline-block;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font: 16pt TitilliumWebBold, sans-serif;
+}
+.user-signup,
+.user-option__create {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  color: #fff;
+  padding: 10px 15px;
+}
+.svg-login {
+  width: 15px;
+  height: 15px;
+  fill: var(--primary-color);
+  position: relative;
+  top: 2px;
+  left: -5px;
+}
+/* MIDDLE PART OF HEADER */
+.header-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-title {
+  color: var(--text-color);
+  font-size: 40pt;
+  margin-bottom: 0;
+}
+.header-desc {
+  font-size: 30pt;
+  margin: 0 0 20px;
+}
+.header-desc--color {
+  color: #f53d43;
+}
+.user-option {
+  display: flex;
+  align-items: center;
+}
+.user-option__create {
+  padding: 20px 60px;
+  border-radius: 50px;
+}
+.user-option__store {
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-color);
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 22px;
+}
+.svg-option {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+  position: relative;
+  top: 10px;
+}
+.appstore {
+  left: 10px;
+}
+.gplay {
+  left: 12px;
+}
+
+/* SOCIAL BOX fixed */
+.social-box-list {
+  list-style: none;
+  position: fixed;
+  right: 20px;
+  top: 200px;
+  padding: 0;
+  margin: 0;
+}
+.social-box__item {
+  width: 20px;
+  height: 20px;
+  background-color: var(--social-bg);
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+.svg-social {
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+  position: relative;
+  left: 4px;
+}
