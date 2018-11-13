@@ -19,7 +19,7 @@
 .header-wrapper {
   min-height: 800px;
   margin: 0;
-  padding: 90px 0 0 0;
+  padding: 66px 0 0 0;
   background: url(../img/header-2.png) no-repeat 0 85%,
     url(../img/header-1.jpg) no-repeat 0 0;
   background-size: contain;
@@ -39,7 +39,8 @@
   margin: 0;
 }
 .header-nav {
-  margin-left: auto;
+  margin-left: 255px;
+  margin-right: 50px;
 }
 .header-nav-list {
   display: flex;
@@ -47,7 +48,7 @@
   padding: 0;
 }
 .header-nav-list__item {
-  margin-right: 20px;
+  margin-right: 26px;
 }
 .header-nav-list__link {
   text-decoration: none;
@@ -68,7 +69,8 @@
   background-color: var(--primary-color);
   border-radius: 20px;
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px 20px;
+    margin: 0 0 0 15px;
 }
 .svg-login {
   width: 15px;
