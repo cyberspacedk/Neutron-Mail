@@ -102,12 +102,7 @@
 .user-login:hover .svg-login {
   transform: scale(1.2);
   left: -3px;
-}
-.user-signup:hover {
-  background-color: #ffffffb3;
-  color: var(--primary-color);
-  transition: all 0.5s ease-out;
-}
+} 
 
 /* MIDDLE PART OF HEADER */
 .header-middle {
@@ -244,6 +239,10 @@
   height: 215px;
   width: 2px;
 }
+/* SECTION SLOGAN */
+.section-slogan {
+  margin-bottom: 30px;
+}
 .slogan-wrap {
   display: inline-block;
   width: 600px;
@@ -252,14 +251,14 @@
 }
 .slogan-button {
   border: 1px solid #ccc;
-  padding: 25px 30px;
+  padding: 18px 30px;
   border-radius: 30px;
   font-size: 16px;
   color: var(--text-color);
   border-radius: 70px;
   position: relative;
   right: -31%;
-  transition: all 0.2s linear; 
+  transition: all 0.2s linear;
 }
 .slogan-button::before {
   top: 49%;
@@ -276,10 +275,10 @@
   transition: all 0.3s linear;
 }
 /* hover */
-.slogan-button:hover{
-  background-color:var(--text-color);
+.slogan-button:hover {
+  background-color: var(--text-color);
   color: #fff;
-  transition: all 0.2s linear; 
+  transition: all 0.2s linear;
 }
 .slogan-button:hover::before {
   left: -1520px;
@@ -288,15 +287,15 @@
 .slogan-button:hover::after {
   top: -470px;
   transition: all 0.3s linear;
-} 
+}
 /* stripe with media logo */
 .media {
   padding-left: 20px;
-} 
+}
 /* device image */
 .device {
-  background: url(../img/laptop.png) no-repeat 85% 0,
-              url(../img/back.png) no-repeat;
+  background: url(../img/laptop.png) no-repeat 93% -9px,
+    url(../img/back.png) no-repeat 19px 85px;
 }
 
 /* SLIDER */
@@ -305,11 +304,13 @@
   font-family: "Malaga", sans-serif;
   display: flex;
   align-items: flex-start;
+  margin: 73px 0 0 75px;
 }
 .quote-box__control {
   width: 20px;
   text-align: center;
   margin-right: 20px;
+  padding-top: 10px;
 }
 .quote-box__slide {
   width: 600px;
@@ -355,33 +356,46 @@
   transition: all 0.2s linear;
 }
 .cite {
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 25px;
   color: #000;
   margin: 0;
 }
 .author {
-  font-size: 12px;
+  font-size: 18px;
   color: var(--text-color);
 }
 
 /* DOWNLOAD BOX */
 .download-box {
   width: 400px;
-  margin: 80px auto 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-.download-desc {
+  margin: 180px auto 205px; 
   text-align: right;
 }
+.download-title {
+  font-size: 36px;
+  margin: 0; 
+}
+.download-desc { 
+  margin-bottom: 40px;
+}
+ 
 /* UPGRADE BOX */
 .upgrade-box {
   display: flex;
   width: 600px;
   margin: 0 auto 100px;
   flex-direction: column;
+  text-align: center;
+}
+.upgrade-title{
+  font-size: 36px;
+  margin-bottom: 0;
+}
+.upgrade-desc{
+  font-size: 26px;
+}
+.upgrade-choose{
+  text-align: center;
 }
 .svg-upgrade {
   width: 23px;
@@ -392,15 +406,27 @@
   left: -3px;
 }
 .upgrade,
-.donate { 
-  padding: 5px 20px;
-  border-radius: 20px;
+.donate {
+  padding: 10px 35px;
+  border-radius: 50px;
+  line-height: 35px;
+  transition: all 0.2s linear;
+
 }
 .upgrade {
   background-color: var(--primary-color);
+  margin-right: 50px;
 }
 .donate {
   background-color: var(--button-donate);
+}
+/* hover */
+.upgrade:hover,
+.donate:hover,
+.user-signup:hover{
+  transform: translateX(-5px) scale(1.1);
+  box-shadow: 3px 7px 7px 0px #8a8a8abf;
+  transition: all 0.2s linear;
 }
 /* WHO HELP STRIPE */
 .who-help {
@@ -451,7 +477,7 @@
 .footer-contact {
   text-align-last: left;
 }
-.footer-contact__link{
+.footer-contact__link {
   font-weight: 600;
 }
 .footer-title,
@@ -461,11 +487,11 @@
   line-height: 23px;
 }
 .footer-contact__text,
-.footer-copyright{
+.footer-copyright {
   color: var(--primary-color);
-  font-weight: 700; 
+  font-weight: 700;
 }
-.footer-list { 
+.footer-list {
   margin-left: 150px;
 }
 .footer-list__item {
@@ -487,19 +513,19 @@
   color: #fff;
   text-decoration: none;
 }
-.footer-social__link{
+.footer-social__link {
   margin-right: 25px;
   position: relative;
 }
-.footer-social__link::after{
+.footer-social__link::after {
   content: "\002F";
   position: absolute;
   right: -15px;
   top: 4px;
-} 
+}
 /* hover */
 .footer-list__link:hover,
 .footer-social__link:hover,
-.footer-contact__link:hover{
+.footer-contact__link:hover {
   text-shadow: 0 0 5px #fff;
 }
