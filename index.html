@@ -59,19 +59,23 @@
         <div class="header-middle">
           <h2 class="header-title">Secure Email Communication</h2>
           <p class="header-desc">
-            Based in <span class="header-desc--color">Somewhere</span>
+            Based in <span class="decorate">Somewhere</span>
           </p>
           <div class="user-option">
             <button class="user-option__create">Create account</button>
             <div class="user-option__store">
-              <svg class="svg-option appstore">
-                <use href="./img/svg/sprite.svg#apple"></use>
-              </svg>
+              <a href="#">
+                <svg class="svg-option appstore">
+                  <use href="./img/svg/sprite.svg#apple"></use>
+                </svg>
+              </a>
             </div>
             <div class="user-option__store">
-              <svg class="svg-option gplay">
-                <use href="./img/svg/sprite.svg#google-play"></use>
-              </svg>
+              <a href="#">
+                <svg class="svg-option gplay">
+                  <use href="./img/svg/sprite.svg#google-play"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -102,5 +106,116 @@
         </div>
       </header>
     </div>
+    <!-- SECTION FEATURES -->
+    <main class="main">
+      <div class="container">
+        <section class="section-features">
+          <ul class="features-list">
+            <li class="features-list__item">
+              <div class="features-list-wrap">
+                <h3 class="feautres-list__title">Swiss Privacy</h3>
+                <p class="features-list__desc">Data Security and Neutrality</p>
+              </div>
+              <p class="features-list__text">
+                NeutronMail is incorporated in Somewhere and all our servers are
+                located in Switzerland. This means all user data is protected by
+                strict Swiss privacy laws.
+              </p>
+            </li>
+            <li class="features-list__item">
+              <div class="features-list-wrap">
+                <h3 class="feautres-list__title">Double Encryption</h3>
+                <p class="features-list__desc">Automatic Email Security</p>
+              </div>
+              <p class="features-list__text">
+                All emails are secured automatically with end-to-end encryption.
+                This means even we cannot decrypt and read your emails. As a
+                result, your encrypted emails cannot be shared with third
+                parties.
+              </p>
+            </li>
+            <li class="features-list__item">
+              <div class="features-list-wrap">
+                <h3 class="feautres-list__title">Anonymous Email</h3>
+                <p class="features-list__desc">Protect Your Privacy</p>
+              </div>
+              <p class="features-list__text">
+                No personal information is required to create your secure email
+                account. By default, we do not keep any IP logs which can be
+                linked to your anonymous email account. Your privacy comes
+                first.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!-- SECTION SLOGAN -->
+        <section class="section-slogan">
+          <div class="slogan-wrap">
+            <h2 class="slogan-title">Physical Security</h2>
+            <p class="slogan-desc">
+              NeutronMail's infrastructure resides in Europe's
+              <span class="decorate">most secure</span> datacenter, underneath
+              1000 meters of solid rock.
+            </p>
+            <button class="slogan-button">
+              Learn more about our security features
+            </button>
+          </div>
+        </section>
+        <!-- SECTION MEDIA -->
+        <section class="media">
+          <img src="./img/brand.png" alt="Media about us" />
+        </section>
+      </div>
+      <!-- SECTION DEVICE -->
+      <section class="device">
+        <div class="container">
+          <!-- wrapper for quote-box -->
+          <div class="quote-box">
+
+            <input class="control-1" type="radio" name="control" id="control-1" checked />
+            <input class="control-2" type="radio" name="control" id="control-2" />
+            <input class="control-3" type="radio" name="control" id="control-3" />
+
+            <!-- control box -->
+            <div class="quote-box__control">
+              <label for="control-1" class="control-item-1"></label>
+              <label for="control-2" class="control-item-2"></label>
+              <label for="control-3" class="control-item-3"></label>
+            </div> 
+
+            <!-- slide with quote -->
+            <div class="quote-box__slide">
+              <div class="slide__item slide-1">
+                <p class="cite">
+                  NeutronMail is incorporated in Somewhere and all our servers
+                  are located in Switzerland. This means all user data is
+                  protected by strict Swiss privacy laws.
+                </p>
+                <p class="author">— Swiss Privacy</p>
+              </div>
+              <div class="slide__item slide-2">
+                <p class="cite">
+                  A new email service being developed by a group from MIT and
+                  CERN promises to bring secure, encrypted email to the masses
+                  and keep sensitive information away from prying eyes. — Boston
+                  Herald
+                </p>
+                <p class="author">— Boston Herald</p>
+              </div>
+              <div class="slide__item slide-3">
+                <p class="cite">
+                  No personal information is required to create your secure
+                  email account. By default, we do not keep any IP logs which
+                  can be linked to your anonymous email account. Your privacy
+                  comes first.
+                </p>
+                <p class="author">— Anonymous Email</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

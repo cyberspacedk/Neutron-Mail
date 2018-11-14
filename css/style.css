@@ -11,16 +11,21 @@
   font-family: "TitilliumWebBold";
   src: url(../font/TitilliumWeb-Bold.ttf);
 }
+@font-face {
+  font-family: "Malaga";
+  src: url(../font/MalagaNarrowItalic.otf);
+}
 
 * {
   box-sizing: border-box;
 }
 
 .header-wrapper {
+  min-width: 1300px;
   min-height: 800px;
   margin: 0;
-  padding: 66px 0 0 0;
-  background: url(../img/header-2.png) no-repeat 0 85%,
+  padding: 70px 0 0 0;
+  background: url(../img/header-2.png) no-repeat 0 73%,
     url(../img/header-1.jpg) no-repeat 0 0;
   background-size: contain;
 }
@@ -34,12 +39,13 @@
 .header-top {
   display: flex;
   align-items: baseline;
+  margin-bottom: 15px;
 }
 .header-logo {
   margin: 0;
 }
 .header-nav {
-  margin-left: 255px;
+  margin-left: 293px;
   margin-right: 50px;
 }
 .header-nav-list {
@@ -49,20 +55,29 @@
 }
 .header-nav-list__item {
   margin-right: 26px;
+  transition: all 0.2s linear;
+}
+/* hover */
+.header-nav-list__item:hover {
+  box-shadow: 0 2px 0 0 var(--primary-color);
 }
 .header-nav-list__link {
   text-decoration: none;
-  font: 16pt TitilliumWebReg, sans-serif;
+  font: 16px TitilliumWebReg, sans-serif;
   color: var(--text-color);
 }
+/* style for button */
 .user-login,
 .user-signup,
-.user-option__create {
+.user-option__create,
+.slogan-button {
   display: inline-block;
   background-color: transparent;
   outline: none;
   border: none;
-  font: 16pt TitilliumWebBold, sans-serif;
+  font: 16px TitilliumWebBold, sans-serif;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 .user-signup,
 .user-option__create {
@@ -70,7 +85,11 @@
   border-radius: 20px;
   color: #fff;
   padding: 10px 20px;
-    margin: 0 0 0 15px;
+  margin: 0 0 0 15px;
+}
+.user-login:hover .svg-login {
+  transform: scale(1.2);
+  left: -3px;
 }
 .svg-login {
   width: 15px;
@@ -79,6 +98,15 @@
   position: relative;
   top: 2px;
   left: -5px;
+}
+/* hover */
+.user-login:hover {
+  color: #70497c;
+}
+.user-signup:hover {
+  background-color: #ffffffb3;
+  color: var(--primary-color);
+  transition: all 0.5s ease-out;
 }
 /* MIDDLE PART OF HEADER */
 .header-middle {
@@ -89,14 +117,14 @@
 }
 .header-title {
   color: var(--text-color);
-  font-size: 40pt;
-  margin-bottom: 0;
+  font-size: 60px;
+  margin-bottom: 10px;
 }
 .header-desc {
   font-size: 30pt;
-  margin: 0 0 20px;
+  margin: 0 0 65px;
 }
-.header-desc--color {
+.decorate {
   color: #f53d43;
 }
 .user-option {
@@ -104,8 +132,10 @@
   align-items: center;
 }
 .user-option__create {
-  padding: 20px 60px;
+  padding: 15px 65px;
   border-radius: 50px;
+  font-size: 18px;
+  transition: all 0.3s linear;
 }
 .user-option__store {
   width: 45px;
@@ -114,6 +144,13 @@
   display: inline-block;
   border-radius: 50%;
   margin-left: 22px;
+  transition: all 0.3s linear;
+}
+.user-option__store:hover,
+.user-option__create:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0px 2px #ffffff80;
+  transition: all 0.3s linear;
 }
 .svg-option {
   width: 25px;
@@ -144,6 +181,7 @@
   background-color: var(--social-bg);
   margin-bottom: 20px;
   border-radius: 3px;
+  transition: all 0.2s linear;
 }
 .svg-social {
   width: 12px;
@@ -151,4 +189,153 @@
   fill: #fff;
   position: relative;
   left: 4px;
+}
+.social-box__item:hover {
+  transform: translateX(-5px) scale(1.2);
+  box-shadow: 5px 5px 3px #8a8a8a;
+  transition: all 0.2s linear;
+}
+/* SECTION FEATURES */
+.features-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.features-list__item {
+  flex-basis: 370px;
+}
+.features-list-wrap {
+  padding: 5px 0 5px 65px;
+}
+.features-list__item:first-child .features-list-wrap {
+  background: url(../img/shield.png) no-repeat left 50%;
+}
+.features-list__item:nth-child(2) .features-list-wrap {
+  background: url(../img/lock.png) no-repeat left 50%;
+}
+.features-list__item:last-child .features-list-wrap {
+  background: url(../img/key.png) no-repeat left 0;
+}
+.feautres-list__title {
+  margin: 0;
+}
+.features-list__desc {
+  margin: 0 0 15px 0;
+}
+.features-list__text {
+  font-size: 14px;
+  line-height: 22px;
+}
+.features-list__item:nth-child(2) {
+  position: relative;
+}
+.features-list__item:nth-child(2)::before,
+.slogan-button::before,
+.slogan-button::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100px;
+  background-color: #b9b9b9;
+} 
+.features-list__item:nth-child(2)::before {
+  top: -130px;
+  left: -30px;
+  height: 215px;
+} 
+.slogan-wrap {
+  display: inline-block;
+  width: 600px;
+  text-align: right;
+  margin-left: 230px;
+}
+
+.slogan-button {
+  border: 1px solid #ccc;
+  padding: 25px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: var(--text-color);
+  border-radius: 70px;
+  position: relative;
+  right: -31%;
+}
+.slogan-button::before {
+  top: 49%;
+  left: -1500px;
+  width: 1500px;
+  height: 2px;
+}
+.slogan-button::after {
+  left: 50%;
+  top: -450px;
+  height: 450px;
+}
+.media {
+  padding-left: 20px;
+} 
+/* SLIDER */ 
+.quote-box {
+  width: 620px;
+  font-family: "Malaga", sans-serif;
+  display: flex;
+  align-items: flex-start;
+} 
+.quote-box__control {
+  width: 20px;
+  text-align: center;
+  margin-right: 20px;
+}
+.quote-box__slide {
+  width: 600px;
+  position: relative;
+}
+.slide__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+/* hide radio */
+[type="radio"] {
+  display: none;
+}
+
+.quote-box__control label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+/* change style for active label */
+.control-1:checked ~ .quote-box__control .control-item-1,
+.control-2:checked ~ .quote-box__control .control-item-2,
+.control-3:checked ~ .quote-box__control .control-item-3 {
+  width: 17px;
+  height: 17px;
+  background-color: #000;
+  transition: all 0.2s linear;
+}
+
+.control-1:checked ~ .quote-box__slide .slide-1,
+.control-2:checked ~ .quote-box__slide .slide-2,
+.control-3:checked ~ .quote-box__slide .slide-3 {
+  opacity: 1;
+  transition: all 0.2s linear;
+} 
+.cite {
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+  margin: 0;
+}
+.author {
+  font-size: 12px;
+  color: var(--text-color);
 }
