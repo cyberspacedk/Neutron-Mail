@@ -2,6 +2,7 @@
   --primary-color: #70497c;
   --text-color: #535353;
   --social-bg: #62625f;
+  --button-donate:#518fe7;
 }
 @font-face {
   font-family: "TitilliumWebReg";
@@ -25,8 +26,7 @@
   min-height: 800px;
   margin: 0;
   padding: 70px 0 0 0;
-  background: url(../img/header-2.png) no-repeat 0 73%,
-    url(../img/header-1.jpg) no-repeat 0 0;
+  background: url(../img/header.png) no-repeat;  
   background-size: contain;
 }
 .container {
@@ -35,6 +35,7 @@
   padding: 0;
   font-family: TitilliumWebReg, serif;
   color: var(--text-color);
+  position: relative;
 }
 .header-top {
   display: flex;
@@ -70,7 +71,9 @@
 .user-login,
 .user-signup,
 .user-option__create,
-.slogan-button {
+.slogan-button,
+.upgrade,
+.donate {
   display: inline-block;
   background-color: transparent;
   outline: none;
@@ -229,19 +232,21 @@
 .features-list__item:nth-child(2) {
   position: relative;
 }
+/* COMMON STYLE FOR PSEUDO STRIPE */
 .features-list__item:nth-child(2)::before,
 .slogan-button::before,
-.slogan-button::after {
+.slogan-button::after,
+.who-help::before,
+.who-help::after {
   position: absolute;
-  content: "";
-  width: 2px;
-  height: 100px;
+  content: ""; 
   background-color: #b9b9b9;
 } 
 .features-list__item:nth-child(2)::before {
   top: -130px;
   left: -30px;
   height: 215px;
+  width: 2px;
 } 
 .slogan-wrap {
   display: inline-block;
@@ -270,10 +275,17 @@
   left: 50%;
   top: -450px;
   height: 450px;
+  width: 2px;
 }
 .media {
   padding-left: 20px;
 } 
+/* device image */
+.device{  
+  background: url(../img/laptop.png) no-repeat 85% 0, 
+              url(../img/back.png) no-repeat;
+}
+ 
 /* SLIDER */ 
 .quote-box {
   width: 620px;
@@ -305,8 +317,8 @@
 
 .quote-box__control label {
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-color: #ccc;
   margin-bottom: 5px;
   border-radius: 50%;
@@ -317,8 +329,8 @@
 .control-1:checked ~ .quote-box__control .control-item-1,
 .control-2:checked ~ .quote-box__control .control-item-2,
 .control-3:checked ~ .quote-box__control .control-item-3 {
-  width: 17px;
-  height: 17px;
+  width: 15px;
+  height: 15px;
   background-color: #000;
   transition: all 0.2s linear;
 }
@@ -337,5 +349,91 @@
 }
 .author {
   font-size: 12px;
+  color: var(--text-color);
+}
+
+/* DOWNLOAD BOX */
+.download-box{
+width: 400px; 
+margin: 80px auto 100px;  
+display: flex; 
+flex-direction: column;  
+align-items: end;
+}
+.download-desc{
+  text-align: right;
+}
+/* UPGRADE BOX */
+.upgrade-box{
+  display: flex;
+  width: 600px;
+  margin: 0 auto 100px;
+  flex-direction: column; 
+} 
+.svg-upgrade{
+  width: 23px;
+  height: 23px;
+  fill: #fff;
+  position: relative;
+  top: 5px;
+  left: -3px;
+}
+.upgrade,
+.donate{
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 20px;
+} 
+.upgrade{ 
+  background-color: var(--primary-color); 
+}
+.donate{ 
+  background-color: var(--button-donate);  
+}
+/* WHO HELP STRIPE */
+.who-help{
+  width: 895px;
+  margin: 0 auto;
+  position: relative;
+}
+.who-help__desc{
+  text-align: right;
+  padding: 10px;
+}
+.who-help::before{
+  top: 0;
+  right: 0;
+  width: 1500px;
+  height: 2px;
+}
+.who-help::after{
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 440px;
+}
+/* FOOTER */
+.footer{
+  background: url(../img/footer.jpg) no-repeat;
+  background-size: cover;
+  font-size: 14px;
+}
+.footer-top-box{
+  display: flex; 
+  text-align: right;
+  align-items: flex-start;
+}
+.footer-title,
+.footer-contact__text{
+  margin: 0;
+}
+.footer-list{
+  list-style: none; 
+}
+.footer-list__item::after{
+  content: ""
+}
+.footer-list__link{
+  text-decoration: none; 
   color: var(--text-color);
 }

@@ -10,18 +10,15 @@
   </head>
   <body>
     <div class="header-wrapper">
-      <header class="header container">
+      <header class="header container"> 
         <div class="header-top">
+<!-- LOGO -->
           <h1 class="header-logo">
             <a href="/" class="header-logo__link">
-              <img
-                src="./img/logo.png"
-                alt="Neutron Mail"
-                class="header-logo__img"
-              />
+              <img src="./img/logo.png" alt="Neutron Mail" class="header-logo__img"/>
             </a>
           </h1>
-
+<!-- NAVIGATION -->
           <nav class="header-nav">
             <ul class="header-nav-list">
               <li class="header-nav-list__item">
@@ -44,7 +41,7 @@
               </li>
             </ul>
           </nav>
-
+          <!-- user action -->
           <div class="user-action">
             <button class="user-login">
               <svg class="svg-login">
@@ -55,7 +52,7 @@
             <button class="user-signup">Sign Up</button>
           </div>
         </div>
-
+<!-- HEADER TITLE -->
         <div class="header-middle">
           <h2 class="header-title">Secure Email Communication</h2>
           <p class="header-desc">
@@ -79,6 +76,7 @@
             </div>
           </div>
         </div>
+<!-- FIXED SOCIAL BOX -->
         <div class="header-social-box">
           <ul class="social-box-list">
             <li class="social-box__item">
@@ -106,7 +104,7 @@
         </div>
       </header>
     </div>
-    <!-- SECTION FEATURES -->
+<!-- SECTION FEATURES -->
     <main class="main">
       <div class="container">
         <section class="section-features">
@@ -148,7 +146,7 @@
             </li>
           </ul>
         </section>
-        <!-- SECTION SLOGAN -->
+<!-- SECTION SLOGAN -->
         <section class="section-slogan">
           <div class="slogan-wrap">
             <h2 class="slogan-title">Physical Security</h2>
@@ -162,27 +160,26 @@
             </button>
           </div>
         </section>
-        <!-- SECTION MEDIA -->
+<!-- SECTION MEDIA -->
         <section class="media">
-          <img src="./img/brand.png" alt="Media about us" />
+          <img src="./img/media.png" alt="Media about us" />
         </section>
       </div>
-      <!-- SECTION DEVICE -->
+<!-- SECTION DEVICE -->
       <section class="device">
         <div class="container">
           <!-- wrapper for quote-box -->
           <div class="quote-box">
-
-            <input class="control-1" type="radio" name="control" id="control-1" checked />
-            <input class="control-2" type="radio" name="control" id="control-2" />
-            <input class="control-3" type="radio" name="control" id="control-3" />
+            <input class="control-1" type="radio" name="control" id="control-1" checked/>
+            <input class="control-2" type="radio" name="control" id="control-2"/>
+            <input class="control-3" type="radio" name="control" id="control-3"/>
 
             <!-- control box -->
             <div class="quote-box__control">
               <label for="control-1" class="control-item-1"></label>
               <label for="control-2" class="control-item-2"></label>
               <label for="control-3" class="control-item-3"></label>
-            </div> 
+            </div>
 
             <!-- slide with quote -->
             <div class="quote-box__slide">
@@ -214,8 +211,98 @@
               </div>
             </div>
           </div>
+<!-- DOWNLOAD BOX -->
+          <div class="download">
+            <div class="download-box">
+              <h2 class="download-title">Any device, anywhere</h2>
+              <p class="download-desc">
+                The NeutronMail inbox is optimized for productivity. Each detail
+                within our secure email service is optimized to help you better
+                read, organize, and send email.
+              </p>
+              <div class="download-store">
+                <a href="#" class="download-appstore">
+                  <img src="./img/appstore.png" alt="Download appstore" />
+                </a>
+                <a href="#" class="download-gplay">
+                  <img src="./img/gplay.png" alt="Download google play" />
+                </a>
+              </div>
+            </div>
+<!-- UPGRADE BOX -->
+            <div class="upgrade-box">
+              <h2 class="upgrade-title">
+                Privacy is a fundamental human right.
+              </h2>
+              <p class="upgrade-desc">
+                Your support helps us to protect privacy world-wide.
+              </p> 
+              <div class="upgrade-choose">
+                <button class="upgrade">
+                  <svg class="svg-upgrade">
+                    <use href="./img/svg/sprite.svg#cloud-upload"></use>
+                  </svg>
+                  Upgrade to Paid Plan
+                </button>
+                <button class="donate">
+                  <svg class="svg-upgrade">
+                    <use href="./img/svg/sprite.svg#dollar"></use>
+                  </svg>
+                  Donate
+                </button>
+              </div> 
+            </div>
+            <div class="who-help">
+              <p class="who-help__desc">Those, who help us secure your privacy</p>
+              <img src="./img/brand.png" alt="Those, who help us secure your privacy">
+            </div>
+          </div>
         </div>
       </section>
     </main>
+<!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top-box">
+          <div class="footer-contact">
+            <p class="footer-contact__text">General:<b>contact@neutronmail.ch</b></p>
+            <p class="footer-contact__text">Media: <b>media@neutronmail.ch</b></p>
+            <p class="footer-contact__text">Security: <b>security@neutronmail.ch</b></p>
+            <p class="footer-contact__text">For support inquiries, please visit <br>
+                <b>neutronmail.com/support</b></p>
+          </div>
+          <div class="footer-company">
+            <h3 class="footer-title">Company</h3>
+            <ul class="footer-list">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Blog</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Team</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Careers</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Support</a></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Donate</a></li>
+            </ul>
+          </div>
+          <div class="footre-legal">
+            <h3 class="footer-title">Legal</h3>
+            <ul class="footer-list">
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Imprint</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Privacy Policy</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Terms & Conditions</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Transparency Report</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Report Abuse</a></li>
+              </ul>
+          </div>
+          <div class="footer-neutronmail">
+            <h3 class="footer-title">NeutronMail </h3>
+            <ul class="footer-list">
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Pricing</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Security</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Shop</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Press/Media Kit</a></li>
+                <li class="footer-list__item"><a href="#" class="footer-list__link">Onion Site</a></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    </footer>
   </body>
 </html>
