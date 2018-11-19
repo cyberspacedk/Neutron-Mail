@@ -1,3 +1,3 @@
 # Neutron-Mail
-Training FIXED size PSD 
+Training FIXED/DESCKTOP size PSD 
 ## [Live Demo](https://cyberspacedk.github.io/Neutron-Mail/)
