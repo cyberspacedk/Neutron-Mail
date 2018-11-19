@@ -1,3 +1,3 @@
 # Neutron-Mail
-FIXED/DESCKTOP  
+FIXED/DESKTOP size
 ## [Demo](https://cyberspacedk.github.io/Neutron-Mail/)
