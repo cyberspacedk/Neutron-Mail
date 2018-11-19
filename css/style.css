@@ -455,7 +455,7 @@
   min-height: 320px;
   padding-top: 50px;
   background: url(../img/footer.jpg) no-repeat;
-  background-size: 100%;
+  background-size: cover;
   font-size: 14px;
   position: relative;
 }
